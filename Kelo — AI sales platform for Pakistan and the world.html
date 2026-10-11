@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Kelo — AI sales platform for Pakistan and the world</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bricolage+Grotesque:wght@500..800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--fg:#101011;--mut:#6b6c6b;--card:#f6f6f9;--line:#e6e7e6;--acc:#01bc7d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0c0b;--fg:#f2f3f2;--mut:#9a9b9a;--card:#151715;--line:#262826}}
+:root[data-theme="dark"]{--bg:#0b0c0b;--fg:#f2f3f2;--mut:#9a9b9a;--card:#151715;--line:#262826}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font-family:Inter,system-ui,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}
+.w{max-width:1160px;margin:auto;padding:0 20px}
+.s{padding:80px 0}
+h2{font-size:clamp(30px,5vw,46px);line-height:1.1;letter-spacing:-.02em;font-weight:600}
+.sub{color:var(--mut);max-width:480px}
+.btn{display:inline-block;border:0;border-radius:99px;padding:12px 22px;font:600 15px Inter,sans-serif;cursor:pointer;background:#fff;color:#000}
+.btn.g{background:var(--acc);color:#fff}
+.hero{position:relative;background:radial-gradient(60% 50% at 15% 0,#0c7a56 0,transparent 70%),radial-gradient(50% 45% at 90% 15%,#2b3a9a 0,transparent 70%),#050706;color:#fff;padding:130px 20px 70px;text-align:center;overflow:hidden}
+.nav{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);width:min(92%,980px);display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px 8px 18px;border-radius:99px;background:rgba(255,255,255,.07);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.14);z-index:5}
+.logo{font-weight:700;font-size:20px;letter-spacing:-.02em}
+.nl{display:flex;gap:28px;font-size:15px;color:rgba(255,255,255,.7)}
+.nl a:hover{color:#fff}
+.rg{display:flex;background:rgba(255,255,255,.1);border-radius:99px;padding:3px}
+.rg button{border:0;background:none;color:rgba(255,255,255,.7);font:600 13px Inter,sans-serif;padding:7px 12px;border-radius:99px;cursor:pointer}
+.rg button.on{background:#fff;color:#000}
+.hero h1{font-size:clamp(38px,6.5vw,64px);line-height:1.08;letter-spacing:-.025em;font-weight:600;max-width:820px;margin:0 auto 14px}
+.hero p.l{color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 10px;font-size:17px}
+.hero{isolation:isolate;z-index:5}.hero p.l{margin-bottom:28px}
+.hero h1 i{display:inline-block;background:linear-gradient(90deg,#6ef0c0,#7cc4ff);-webkit-background-clip:text;background-clip:text;color:transparent;transition:opacity .3s}
+.hero:after{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(500px circle at var(--hx,50%) var(--hy,20%),rgba(255,255,255,.09),transparent 60%)}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.45;z-index:-1;animation:fl 12s ease-in-out infinite alternate}
+.o1{width:360px;height:360px;background:#01bc7d;top:8%;left:-6%}.o2{width:320px;height:320px;background:#6366f1;top:28%;right:-6%;animation-delay:-5s}
+@keyframes fl{to{transform:translate(50px,-30px) scale(1.2)}}
+.nav{transition:background .3s,box-shadow .3s}.nav.sc{background:rgba(8,10,9,.85);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--acc),#6366f1);z-index:99}
+.btn{transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.mq{overflow:hidden;background:#050706;border-top:1px solid rgba(255,255,255,.08);padding:16px 0;color:rgba(255,255,255,.55);font-size:14px;white-space:nowrap}
+.mqt{display:inline-flex;gap:40px;padding-right:40px;animation:mq 32s linear infinite}.mqt span:after{content:'✦';margin-left:40px;color:var(--acc)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.dash{position:relative;transition:transform .25s ease-out}.dc{position:relative}.dash aside a{cursor:pointer}
+.sw{display:flex;background:rgba(255,255,255,.08);border-radius:99px;padding:2px}.sw button{border:0;background:none;color:rgba(255,255,255,.6);font:600 11px Inter,sans-serif;padding:4px 10px;border-radius:99px;cursor:pointer}.sw button.on{background:rgba(255,255,255,.18);color:#fff}
+.tip{position:absolute;transform:translate(-50%,-135%);background:#fff;color:#000;font-size:12px;font-weight:700;padding:5px 9px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .15s;white-space:nowrap}.tip.on{opacity:1}
+.toast{position:absolute;right:16px;bottom:16px;background:#fff;color:#111;border-radius:12px;padding:10px 14px;font-size:13px;font-weight:600;box-shadow:0 12px 30px rgba(0,0,0,.35);transform:translateY(16px);opacity:0;transition:.4s;z-index:3;pointer-events:none}.toast.on{transform:none;opacity:1}
+.bars i:hover{background:var(--acc)}
+.fc,.it,.pc{position:relative;overflow:hidden;transition:transform .3s,border-color .3s}.fc>*,.it>*,.pc>*{position:relative}
+.fc:before,.it:before,.pc:before{content:'';position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0),rgba(1,188,125,.16),transparent 70%);opacity:0;transition:opacity .3s;pointer-events:none}
+.fc:hover,.it:hover,.pc:hover{transform:translateY(-4px)}.fc:hover:before,.it:hover:before,.pc:hover:before{opacity:1}
+.pc.pop{border:2px solid var(--acc)}.bdg{align-self:flex-start;background:var(--acc);color:#fff;font-size:12px;font-weight:600;border-radius:99px;padding:3px 12px}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:36px;align-items:center;background:radial-gradient(60% 80% at 0 0,#0c7a56,transparent),radial-gradient(60% 80% at 100% 100%,#2b3a9a,transparent),#050706;color:#fff;border-radius:28px;padding:clamp(24px,5vw,56px)}
+.calc .sub{color:rgba(255,255,255,.7)}.calc label{display:flex;justify-content:space-between;font-size:14px;margin:18px 0 8px}.calc input{width:100%;accent-color:var(--acc)}
+.res{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}.res div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:16px}.res small{color:rgba(255,255,255,.6);display:block;font-size:12px}.res strong{font-size:clamp(20px,3vw,30px)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+h1,h2,h3,.logo,.big,.pp,.mt b,.res strong{font-family:'Bricolage Grotesque',Inter,system-ui,sans-serif}
+.hero h1 i{background:linear-gradient(90deg,#6ef0c0,#ffd166);-webkit-background-clip:text;background-clip:text}.mqt span:after{color:#ffd166}
+.jl{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;-webkit-mask-image:radial-gradient(320px circle at var(--hx,50%) var(--hy,20%),#000,rgba(0,0,0,.12));mask-image:radial-gradient(320px circle at var(--hx,50%) var(--hy,20%),#000,rgba(0,0,0,.12))}
+.cur{position:fixed;left:-12px;top:-12px;width:24px;height:24px;border:2px solid var(--acc);border-radius:50%;pointer-events:none;z-index:98;transition:width .2s,height .2s,margin .2s,background .2s}.cur.big{width:46px;height:46px;margin:-11px 0 0 -11px;background:rgba(1,188,125,.14)}@media(hover:none){.cur{display:none}}
+.cf{position:fixed;width:8px;height:8px;border-radius:2px;pointer-events:none;z-index:200}
+.mp{background:#050706;color:#fff;padding:80px 0}.mp .sub{color:rgba(255,255,255,.65);margin-top:12px}
+.mpw{position:relative;margin-top:30px;border:1px solid rgba(255,255,255,.1);border-radius:28px;background:radial-gradient(50% 60% at 70% 40%,rgba(1,188,125,.2),transparent),#080b09;overflow:hidden}.mpw svg{display:block;width:100%;height:auto}
+.ar{fill:none;stroke:rgba(110,240,192,.55);stroke-width:1.5;stroke-dasharray:3 6;animation:dm 1.5s linear infinite}@keyframes dm{to{stroke-dashoffset:-18}}
+.nd{cursor:pointer;outline:none}.nd .pl{fill:rgba(1,188,125,.25);transform-box:fill-box;transform-origin:center;animation:pu 2.4s ease-out infinite}.nd .c{fill:#fff;transition:fill .2s}.nd text{fill:#fff;font:600 12px Inter,sans-serif;text-anchor:middle}.nd:hover .c,.nd.on .c{fill:#ffd166}@keyframes pu{from{transform:scale(.4);opacity:1}to{transform:scale(1.9);opacity:0}}
+.info{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.08);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:14px 18px;display:grid;gap:2px;font-size:13px;min-width:210px}.info b{font-size:20px;font-family:'Bricolage Grotesque',Inter,sans-serif}.info span{color:rgba(255,255,255,.7)}
+.dtl{margin-top:18px;color:rgba(255,255,255,.7)}.dtl b{color:#ffd166;font-size:24px;font-family:'Bricolage Grotesque',Inter,sans-serif}
+.nav{color:#fff}.nl a.on{color:#fff;font-weight:600}
+@keyframes pgi{from{opacity:0;transform:translateY(16px)}}.pgi{animation:pgi .5s ease}
+.ex{padding:70px 0}.xc{display:flex;flex-direction:column;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:22px;padding:26px;min-height:170px;transition:transform .3s,border-color .3s}.xc:hover{transform:translateY(-4px);border-color:var(--acc)}.xc b{font:600 22px 'Bricolage Grotesque',Inter,sans-serif}.xc span{color:var(--mut);font-size:14px;flex:1}.xc em{font-style:normal;color:var(--acc);font-weight:600;font-size:14px}
+.ci{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--fg);font:14px Inter,sans-serif;width:100%}textarea.ci{min-height:110px;resize:vertical}a.fc{cursor:pointer}.cc p{color:var(--fg);font-size:17px;font-weight:600}
+@media(max-width:820px){.nl{display:flex;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);gap:14px;background:rgba(8,10,9,.88);backdrop-filter:blur(14px);border-radius:99px;padding:8px 16px;font-size:12.5px;white-space:nowrap;max-width:96vw;overflow-x:auto}}
+.sv{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+.ic{color:var(--mut);transition:background .3s,color .3s,border-color .3s,transform .3s}
+.fc:hover .ic{background:var(--acc);color:#fff;border-color:var(--acc);transform:rotate(-8deg) scale(1.1)}
+.fc:hover .ic .sv{animation:wg .7s ease}.fc:hover .ic path,.fc:hover .ic circle,.fc:hover .ic rect{animation:dw .9s ease}
+@keyframes wg{25%{transform:rotate(-14deg) scale(1.15)}60%{transform:rotate(10deg) scale(1.1)}}
+@keyframes dw{from{stroke-dasharray:140;stroke-dashoffset:140}to{stroke-dasharray:140;stroke-dashoffset:0}}
+.rg button{display:inline-flex;align-items:center;gap:6px}.rg .sv{width:14px;height:14px}.rg button:hover .sv{animation:sp 1.2s linear}.fl{width:20px;height:13px;border-radius:3px;display:block}
+.ck{display:inline-block;font-style:normal}.ck .sv{width:15px;height:15px;stroke-width:3;vertical-align:-3px}
+.toast{display:flex;align-items:center;gap:10px}.toast .sv{width:30px;height:30px;padding:6px;border-radius:50%;color:#fff;stroke-width:2.2}.toast.on .sv{animation:pb .5s}@keyframes pb{from{transform:scale(0)}60%{transform:scale(1.25)}}
+.mqt span:after{content:'';display:inline-block;width:8px;height:8px;border-radius:2px;background:#ffd166;margin-left:40px;vertical-align:middle;animation:sp 3s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+.cta{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;padding:15px 30px;font-size:16px;backdrop-filter:blur(10px)}
+.note{display:block;font-size:13px;color:rgba(255,255,255,.6);margin-top:10px}
+.dash{max-width:1040px;margin:48px auto 0;border-radius:28px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);backdrop-filter:blur(24px);display:flex;text-align:left;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.dash aside{width:190px;padding:20px 14px;border-right:1px solid rgba(255,255,255,.1);display:none;flex-direction:column;gap:4px;font-size:14px;color:rgba(255,255,255,.5)}
+.dash aside a{padding:8px 12px;border-radius:8px}.dash aside a.on{background:rgba(255,255,255,.1);color:#fff}
+.dm{flex:1;padding:22px;min-width:0}
+.dh{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:10px}
+.dh input{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:8px 12px;color:#fff;font:14px Inter;width:min(260px,50%)}
+.av{display:flex;align-items:center;gap:10px;font-size:13px}.av i{width:34px;height:34px;border-radius:50%;background:var(--acc);display:grid;place-items:center;font-style:normal;font-weight:700}
+.dg{display:grid;grid-template-columns:1fr;gap:14px}
+.dc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:18px}
+.dc small{color:rgba(255,255,255,.55);font-size:12px}
+.big{font-size:28px;font-weight:700;margin:6px 0}
+.tag{font-size:12px;color:#7cc4ff;background:rgba(124,196,255,.12);padding:3px 9px;border-radius:99px}
+.pb{height:8px;border-radius:9px;background:rgba(255,255,255,.08);margin:12px 0;overflow:hidden;display:flex;gap:3px}.pb i{display:block;height:100%}
+.ch{width:100%;height:150px}
+@keyframes dr{to{stroke-dashoffset:0}}
+.mb{display:flex;align-items:flex-end;gap:8px;height:90px;margin:14px 0 4px}.mb i{flex:1;background:rgba(99,102,241,.5);border-radius:4px 4px 0 0}
+@media(min-width:900px){.dash aside{display:flex}.dg{grid-template-columns:2fr 1fr}.nl{display:flex}}
+@media(max-width:820px){.nl{display:none}}
+.grid{display:grid;gap:16px;margin-top:44px}
+.g4{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.fc{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.fc h3{font-size:18px;font-weight:600}.fc p{color:var(--mut);font-size:14px}
+.ic{width:40px;height:40px;border-radius:12px;background:var(--bg);border:1px solid var(--line);display:grid;place-items:center;font-size:19px}
+.fc.big2{grid-column:1/-1}
+.bars{display:flex;align-items:flex-end;gap:5px;height:130px;margin-top:8px}.bars i{flex:1;background:rgba(1,188,125,.3);border-radius:3px 3px 0 0;transform-origin:bottom;animation:bp 1.8s ease-in-out infinite alternate}
+@keyframes bp{to{transform:scaleY(.55)}}
+.chat{display:flex;flex-direction:column;gap:7px;font-size:13px}.chat span{padding:8px 12px;border-radius:14px;max-width:88%}
+.chat .a{background:var(--bg);border:1px solid var(--line)}.chat .b{background:var(--acc);color:#fff;align-self:flex-end}
+.tabs{display:flex;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:26px 26px 0 0;padding:8px;overflow-x:auto;margin-top:40px}
+.tabs button{flex:1;min-width:150px;border:1px solid transparent;background:none;color:var(--mut);padding:14px;border-radius:18px;font:600 15px Inter;cursor:pointer}
+.tabs button.on{background:var(--bg);border-color:var(--line);color:var(--fg)}
+.hw{border:1px solid var(--line);border-top:0;border-radius:0 0 26px 26px;padding:clamp(22px,5vw,60px);display:grid;gap:36px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:center}
+.hw .bd{display:inline-block;color:var(--acc);background:rgba(1,188,125,.08);border:1px solid rgba(1,188,125,.25);border-radius:99px;padding:3px 13px;font-size:12px;font-weight:600;margin-bottom:12px}
+.hw h3{font-size:clamp(26px,4vw,36px);line-height:1.15;font-weight:600;margin-bottom:12px}
+.hw p{color:var(--mut);margin-bottom:22px}
+.mk{border-radius:28px;padding:34px 24px;background:radial-gradient(70% 70% at 20% 10%,#0c7a56,transparent),radial-gradient(70% 70% at 90% 90%,#2b3a9a,transparent),#0a0d0b;display:flex;flex-direction:column;gap:10px;color:#111}
+.mk div{background:rgba(255,255,255,.88);border-radius:14px;padding:13px 16px;font-size:13px;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.int{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.it{border:1px solid var(--line);border-radius:18px;padding:24px;background:var(--bg)}
+.it:hover{border-color:var(--acc)}
+.it b{display:grid;place-items:center;width:48px;height:48px;border-radius:12px;color:#fff;font-size:20px;margin-bottom:16px}
+.it h3{font-size:17px}.it p{color:var(--mut);font-size:14px}
+.mt{background:radial-gradient(60% 80% at 10% 0,#0c7a56,transparent),radial-gradient(60% 80% at 100% 100%,#2b3a9a,transparent),#050706;padding:70px 0}
+.mt .st{background:#fff;color:#111;border-radius:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));box-shadow:0 30px 70px rgba(0,0,0,.4);overflow:hidden}
+.mt .st div{padding:36px 28px;border-right:1px solid #eee}
+.mt b{display:block;font-size:clamp(38px,5vw,54px);letter-spacing:-.03em}.mt span{font-size:11px;font-weight:700;letter-spacing:.1em;color:#888}
+.pr{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.pc{border-radius:22px;padding:30px;background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;gap:14px;min-height:430px}
+.pc.dk{background:linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),radial-gradient(80% 60% at 30% 0,#0c7a56,#050706);color:#fff;border:0}
+.pc h3{font-size:26px;font-weight:500}.pc .pp{font-size:42px;font-weight:500;letter-spacing:-.02em}.pc .pp small{font-size:15px;color:var(--mut)}
+.pc.dk small,.pc.dk li{color:rgba(255,255,255,.85)}
+.pc ul{list-style:none;padding:0;display:grid;gap:8px;color:var(--mut);font-size:15px;flex:1;border-top:1px solid var(--line);padding-top:18px}
+.pc li:before{content:"•";margin-right:10px}
+.pc .btn{align-self:flex-start}
+.fq{max-width:640px;margin:40px auto 0;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--card)}
+.fq details{border-bottom:1px solid var(--line)}.fq details:last-child{border:0}
+.fq summary{padding:20px 24px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+.fq summary:after{content:"+";color:var(--mut)}.fq details[open] summary:after{content:"–"}
+.fq p{padding:0 24px 20px;color:var(--mut);font-size:15px}
+.ft{background:#000100;color:#fff;margin-top:40px}
+.ft .top{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center;padding:44px 0;border-bottom:1px solid #2e2e2b}
+.ft h2{font-size:26px}
+.ft input{background:#2a2b28;border:1px solid #3b3b36;border-radius:10px;padding:13px 16px;color:#fff;font:14px Inter;width:min(300px,100%)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:24px;padding:44px 0;border-bottom:1px solid #2e2e2b}
+.cols h4{font-size:14px;margin-bottom:12px}.cols a{display:block;color:#888981;font-size:13px;line-height:2.1}.cols a:hover{color:#fff}
+.bt{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;padding:26px 0;font-size:13px;color:#888981}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style></head><body><div class='prog' id='prog'></div><div class='cur' id='cur'></div>
+
+<header class='hero'><div class='orb o1'></div><div class='orb o2'></div><svg class='jl' aria-hidden='true'><defs><pattern id='jl' width='64' height='64' patternUnits='userSpaceOnUse'><g fill='none' stroke='#06d6a0' stroke-opacity='.55'><path d='M32 4l6 20 22 8-22 8-6 20-6-20-22-8 22-8z'/><path d='M32 4l6 20 22 8-22 8-6 20-6-20-22-8 22-8z' transform='rotate(45 32 32)'/><circle cx='32' cy='32' r='4'/></g></pattern></defs><rect width='100%' height='100%' fill='url(#jl)'/></svg>
+<nav class='nav'><a class='logo' href='#/'>kelo</a>
+<div class="nl"><a href='#/'>Home</a><a href='#/features'>Features</a><a href='#/how'>How it works</a><a href='#/pricing'>Pricing</a><a href='#/contact'>Contact</a></div>
+<div style="display:flex;gap:8px;align-items:center"><div class="rg" role="group" aria-label="Region"><button data-r='pk' class='on'><svg class='fl' viewBox='0 0 24 16'><rect width='24' height='16' fill='#01411c'/><rect width='6' height='16' fill='#fff'/><circle cx='15' cy='8' r='3.6' fill='#fff'/><circle cx='16.3' cy='7.2' r='3' fill='#01411c'/><path d='m18.4 4.6.5 1.3 1.3.1-1 .9.3 1.3-1.1-.7-1.1.7.3-1.3-1-.9 1.3-.1z' fill='#fff'/></svg>Pakistan</button><button data-r='in'><span data-ic='globe'></span>Global</button></div><a class='btn' href='#/pricing'>Get started</a></div></nav>
+<h1>AI that takes your sales from Lahore to <i id='rot'>the world</i></h1>
+<p class="l" data-pk="Built for Pakistani businesses: WhatsApp-first selling, PKR billing and local payments in one place." data-in="Built in Pakistan for global teams: multi-currency billing, 24/7 automation and worldwide integrations.">Built for Pakistani businesses: WhatsApp-first selling, PKR billing and local payments in one place.</p>
+
+<button class="btn cta">Start your 14-day free trial</button><span class="note">No credit card required</span>
+
+<div class='dash'><div class='toast' id='toast'></div><aside><b class="logo" style="color:#fff;padding:0 12px 14px">kelo</b><a class="on">Dashboard</a><a>Leads</a><a>WhatsApp</a><a>Invoices</a><a>Teams</a><a>Reports</a><a>Settings</a></aside>
+<div class="dm"><div class="dh"><input placeholder="Search leads, invoices" aria-label="Search"><div class="av"><div><b>Moosa</b><br><small style="color:rgba(255,255,255,.5)">moosasaud77@gmail.com</small></div><i>M</i></div></div>
+<div class="dg"><div style="display:grid;gap:14px">
+<div class="dc"><small>Total revenue</small><div class="big"><span data-pk='Rs 13.0M' data-in='$46,526.08'>Rs 13.0M</span> <span class="tag">+55.06%</span></div>
+<div class="pb"><i style="width:60%;background:#6366f1"></i><i style="width:25%;background:#fb923c"></i><i style="width:10%;background:#f472b6"></i></div>
+<small>Next target <b style="color:#fff" data-pk='Rs 15.5M' data-in='$55,236.29'>Rs 15.5M</b></small></div>
+<div class="dc"><div style='display:flex;justify-content:space-between;align-items:center'><small>Sales</small><span class='sw'><button data-w='m' class='on'>Monthly</button><button data-w='w'>Weekly</button></span></div><svg class="ch" viewBox="0 0 800 200" preserveAspectRatio="none"><path id='ln' pathLength='1' stroke-dasharray="1" stroke-dashoffset="1" style="animation:dr 2s .6s forwards" d="M0,150 L160,140 L320,160 L480,100 L640,120 L800,80" fill="none" stroke="#f97217" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div class='tip' id='tip'></div><div id='xl' style='display:flex;justify-content:space-between;font-size:11px;color:rgba(255,255,255,.45)'><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span></div></div></div>
+<div style="display:grid;gap:14px;align-content:start"><div class="dc"><small>Sales overview</small><div class="big" data-pk='Rs 5.0M' data-in='$18,000'>Rs 5.0M</div><div class="mb"><i style="height:40%"></i><i style="height:60%"></i><i style="height:30%"></i><i style="height:80%"></i><i style="height:50%"></i><i style="height:70%"></i></div></div>
+<div class="dc"><small>Leads by channel</small><div style="font-size:13px;margin-top:8px;display:grid;gap:6px"><div style="display:flex;justify-content:space-between"><span>WhatsApp</span><b>62%</b></div><div style="display:flex;justify-content:space-between"><span>Website</span><b>24%</b></div><div style="display:flex;justify-content:space-between"><span>Email</span><b>14%</b></div></div></div></div></div></div></div>
+</header><div class='mq' aria-hidden='true'><div class='mqt'><span>Lahore</span><span>Karachi</span><span>Islamabad</span><span>Dubai</span><span>London</span><span>Toronto</span><span>Singapore</span><span>New York</span><span>Lahore</span><span>Karachi</span><span>Islamabad</span><span>Dubai</span><span>London</span><span>Toronto</span><span>Singapore</span><span>New York</span></div></div>
+
+<section class='mp'><div class='w'><h2>Sell from Lahore.<br>Get paid anywhere.</h2><p class='sub'>Hover a city to see how deals flow. Click one to switch the pricing region.</p><div class='mpw'><svg viewBox='0 0 800 320' role='img' aria-label='Deal routes from Lahore to Dubai, London, Toronto, Singapore and Sydney'><defs><pattern id='dg' width='14' height='14' patternUnits='userSpaceOnUse'><circle cx='2' cy='2' r='1.1' fill='rgba(255,255,255,.14)'/></pattern></defs><rect width='800' height='320' fill='url(#dg)'/><path class='ar' id='p1' d='M564,131 Q543,112 522,144'/><path class='ar' id='p2' d='M564,131 Q480,48 400,86'/><path class='ar' id='p3' d='M564,131 Q390,10 224,103'/><path class='ar' id='p4' d='M564,131 Q640,120 631,197'/><path class='ar' id='p5' d='M564,131 Q710,150 736,273'/><circle r='3.5' fill='#ffd166'><animateMotion dur='2.2s' repeatCount='indefinite'><mpath href='#p1'/></animateMotion></circle><circle r='3.5' fill='#ffd166'><animateMotion dur='3.2s' repeatCount='indefinite'><mpath href='#p2'/></animateMotion></circle><circle r='3.5' fill='#ffd166'><animateMotion dur='4.4s' repeatCount='indefinite'><mpath href='#p3'/></animateMotion></circle><circle r='3.5' fill='#ffd166'><animateMotion dur='2.8s' repeatCount='indefinite'><mpath href='#p4'/></animateMotion></circle><circle r='3.5' fill='#ffd166'><animateMotion dur='3.8s' repeatCount='indefinite'><mpath href='#p5'/></animateMotion></circle><g class='nd' tabindex='0' data-c='Lahore' transform='translate(564,131)'><circle class='pl' r='14'/><circle class='c' r='6'/><text y='-16'>Lahore</text></g><g class='nd' tabindex='0' data-c='Dubai' transform='translate(522,144)'><circle class='pl' r='14'/><circle class='c' r='5'/><text y='24'>Dubai</text></g><g class='nd' tabindex='0' data-c='London' transform='translate(400,86)'><circle class='pl' r='14'/><circle class='c' r='5'/><text y='-14'>London</text></g><g class='nd' tabindex='0' data-c='Toronto' transform='translate(224,103)'><circle class='pl' r='14'/><circle class='c' r='5'/><text y='-14'>Toronto</text></g><g class='nd' tabindex='0' data-c='Singapore' transform='translate(631,197)'><circle class='pl' r='14'/><circle class='c' r='5'/><text y='24'>Singapore</text></g><g class='nd' tabindex='0' data-c='Sydney' transform='translate(736,273)'><circle class='pl' r='14'/><circle class='c' r='5'/><text y='-14'>Sydney</text></g></svg><div class='info' id='info'></div></div><p class='dtl'><b id='dt'>128</b> deals in transit right now</p></div></section>
+
+<section class="s" id="features"><div class="w">
+<h2>Engineered for how<br>business really works</h2><p class="sub" style="margin-top:14px">One platform for selling on WhatsApp in Karachi and invoicing a client in London.</p>
+<div class="grid g4">
+<div class="fc big2" style="grid-column:span 2;min-width:0"><div class='ic' data-ic='chart'></div><h3>Real-time analytics</h3><p>Watch every lead, chat and payment as it happens, across every city and currency.</p><div class="bars" id="bars"></div></div>
+<div class="fc"><div class='ic' data-ic='msg'></div><h3>WhatsApp automation</h3><p>Reply to every lead in seconds, in the language they prefer.</p><div class="chat"><span class='a'>Hi, what is the price?</span><span class='b'>Hi! Your quotation is on its way <i class='ck' data-ic='tick'></i></span></div></div>
+<div class="fc"><div class='ic' data-ic='card'></div><h3>Local and global payments</h3><p>Collect with JazzCash, Easypaisa, Raast, bank transfer or international cards.</p></div>
+<div class="fc"><div class='ic' data-ic='globe'></div><h3>Multi-currency invoicing</h3><p>Send invoices in PKR, USD, AED or GBP and track what each client owes.</p></div>
+<div class="fc"><div class='ic' data-ic='users'></div><h3>Team collaboration</h3><p>Share leads and notes across Lahore, Karachi, Islamabad and remote teammates.</p></div>
+</div></div></section>
+
+<section class="s" id="how" style="padding-top:0"><div class="w" style="text-align:center">
+<h2>AI-powered sales automation</h2><p class="sub" style="margin:14px auto 0">From first message to closed deal, in four steps.</p>
+<div class="tabs" id="tabs"></div><div class="hw" id="hw" style="text-align:left"></div></div></section>
+
+<section class="s" style="padding-top:0"><div class="w">
+<h2>Works with your<br>entire tech stack</h2><p class="sub" style="margin-top:14px">Connect the tools you already use in one click.</p>
+<div class="grid int">
+<div class="it"><b style="background:#25d366">W</b><h3>WhatsApp Business</h3><p>Chat with leads and send quotations.</p></div>
+<div class="it"><b style="background:#ea4335">G</b><h3>Gmail</h3><p>Write emails and summarize threads.</p></div>
+
+
+<div class="it"><b style="background:#635bff">S</b><h3>Stripe</h3><p>Accept international card payments.</p></div>
+<div class="it"><b style="background:#d4202c">J</b><h3>JazzCash</h3><p>Collect mobile wallet payments. Account: 03002318008</p></div>
+<div class="it"><b style="background:#2fa84f">E</b><h3>Easypaisa</h3><p>Receive payments from any phone. Account: 03002318008</p></div>
+
+</div></div></section>
+
+<section class='ex'><div class='w'><h2>Where to next?</h2><div class='grid g4'><a class='xc' href='#/features'><b>Features</b><span>Analytics, WhatsApp automation and local payments</span><em>Explore</em></a><a class='xc' href='#/how'><b>How it works</b><span>From first message to closed deal in four steps</span><em>See the steps</em></a><a class='xc' href='#/pricing'><b>Pricing</b><span>Simple plans in PKR and USD</span><em>View plans</em></a><a class='xc' href='#/contact'><b>Contact</b><span>Talk to us by email or phone</span><em>Get in touch</em></a></div></div></section>
+
+<section class="mt"><div class="w" style="color:#fff;margin-bottom:34px"><h2>Real systems.<br>Real results.</h2></div>
+<div class="w"><div class="st"><div><span>001</span><b>1500+</b><span>HOURS SAVED MONTHLY</span></div><div><span>002</span><b>94%</b><span>FEWER MANUAL ERRORS</span></div><div><span>003</span><b>312%</b><span>AVERAGE ROI IN 90 DAYS</span></div><div><span>004</span><b>3X</b><span>OUTPUT WITHOUT NEW HIRES</span></div></div></div></section>
+
+<section class='s' style='padding-top:0'><div class='w'><div class='calc'><div><h2>See what Kelo could save you</h2><p class='sub' style='margin-top:12px'>Drag the sliders to estimate your monthly gains. Illustrative figures based on sample assumptions.</p></div><div><label>Leads per month <b id='v1'></b></label><input type='range' id='r1' min='50' max='5000' step='50' value='500' aria-label='Leads per month'><label>Average deal value <b id='v2'></b></label><input type='range' id='r2' aria-label='Average deal value'><div class='res'><div><small>Hours saved</small><strong id='o1'></strong></div><div><small>Extra revenue per month</small><strong id='o2'></strong></div></div></div></div></div></section>
+
+<section class="s" id="pricing"><div class="w" style="text-align:center">
+<h2>Simple pricing for<br>smarter workflows</h2><p class="sub" style="margin:14px auto 0" data-pk="Prices in Pakistani rupees. Switch to Global for USD." data-in="Prices in US dollars. Switch to Pakistan for PKR.">Prices in Pakistani rupees. Switch to Global for USD.</p>
+<div class="grid pr" style="text-align:left">
+<div class="pc"><h3>Pro</h3><p class="sub">For lean teams cutting manual work.</p><div class="pp"><span data-pk="Rs 9,999" data-in="$35">Rs 9,999</span> <small>per month</small></div><ul><li>Core workflow automation</li><li>Up to 3 team members</li><li>WhatsApp and email sync</li><li>Monthly reports</li></ul><button class="btn g">Get in touch</button></div>
+<div class='pc pop'><span class='bdg'>Most popular</span><h3>Premium</h3><p class="sub">For growing teams that need deeper insight.</p><div class="pp"><span data-pk="Rs 17,999" data-in="$65">Rs 17,999</span> <small>per month</small></div><ul><li>Everything in Pro</li><li>Advanced analytics</li><li>Unlimited users</li><li>Multi-currency invoicing</li></ul><button class="btn g">Get in touch</button></div>
+<div class="pc dk"><h3>Enterprise</h3><p>For large teams unifying operations across countries.</p><div class="pp"><span data-pk="Rs 34,999" data-in="$129">Rs 34,999</span> <small>per month</small></div><ul style="border-color:rgba(255,255,255,.3)"><li>Everything in Premium</li><li>Full API access</li><li>Dedicated onboarding</li><li>Priority support</li></ul><button class="btn g">Get in touch</button></div>
+</div></div></section>
+
+<section class="s" id="faq" style="padding-top:0"><div class="w" style="text-align:center"><h2>Curious about<br>something?</h2>
+<div class="fq" style="text-align:left">
+<details><summary>Can I pay in Pakistani rupees?</summary><p>Yes. Pakistani customers can pay in PKR by bank transfer, Raast, JazzCash or Easypaisa. International customers can pay by card in USD.</p></details>
+<details><summary>Can I message customers in their own language?</summary><p>Yes. Templates and automations support multiple languages, so each customer hears from you in the one they prefer.</p></details>
+<details><summary>Can I sell to clients outside Pakistan?</summary><p>Yes. Send invoices in PKR, USD, AED or GBP and connect global tools like Stripe and Gmail.</p></details>
+<details><summary>Is my customer data safe?</summary><p>Your data is encrypted in transit and at rest, and you control who on your team can see each lead.</p></details>
+<details><summary>Is there a free trial?</summary><p>Yes. Every plan starts with 14 days free, and no credit card is required.</p></details>
+</div></div></section>
+
+<section class='s' id='contact'><div class='w'><h2>Let us talk about<br>your business</h2><p class='sub' style='margin-top:12px'>Email or call us and we will get back to you.</p><div class='grid g4'><a class='fc cc' href='mailto:moosasaud77@gmail.com'><div class='ic' data-ic='mail'></div><h3>Email</h3><p>moosasaud77@gmail.com</p></a><a class='fc cc' href='tel:03002318008'><div class='ic' data-ic='phone'></div><h3>Phone</h3><p>03002318008</p></a></div><div class='fc' style='margin-top:16px'><h3>Send a message</h3><input class='ci' id='cn' placeholder='Your name' aria-label='Your name'><textarea class='ci' id='cm' placeholder='How can we help your business?' aria-label='Message'></textarea><a class='btn g' id='send' href='mailto:moosasaud77@gmail.com' style='align-self:flex-start'>Send message</a></div></div></section>
+
+<footer class="ft"><div class="w">
+<div class="top"><h2>Subscribe to our newsletter</h2><div style="display:flex;gap:10px;flex-wrap:wrap"><input type="email" id="em" placeholder="Enter your email" aria-label="Email"><button class="btn g" id="sb" style="border-radius:10px">Subscribe</button></div></div>
+<div class="cols"><div><h4>Company</h4><a href='#/contact'>About</a><a href="#">Careers</a><a href="#">Partners</a><a href="#">Privacy</a></div><div><h4>Support</h4><a href='#/contact'>Help center</a><a href="#">Terms of service</a><a href='#/contact'>Contact sales</a></div><div><h4>Developers</h4><a href="#">API documentation</a><a href="#">Office hours</a></div><div><h4>Solutions</h4><a href='#/pricing'>For Pakistani businesses</a><a href='#/features'>For global teams</a><a href='#/features'>For online stores</a></div><div><h4>Contact</h4><a href="mailto:moosasaud77@gmail.com">moosasaud77@gmail.com</a><a href="tel:03002318008">03002318008</a></div></div>
+<div class="bt"><span class="logo" style="color:#fff">kelo</span><span>© 2026 Kelo. Built in Pakistan, for the world.</span></div></div></footer>
+
+<script>
+var R='pk';
+function setR(r){R=r;if(window.calc)calc(1);document.querySelectorAll('[data-pk]').forEach(function(e){e.textContent=e.dataset[r]});document.querySelectorAll('.rg button').forEach(function(b){b.classList.toggle('on',b.dataset.r===r)})}
+document.querySelectorAll('.rg button').forEach(function(b){b.onclick=function(){setR(b.dataset.r)}});
+var bars=document.getElementById('bars');for(var i=0;i<24;i++){var d=document.createElement('i');d.style.height=(30+Math.abs(Math.sin(i*1.7))*65)+'%';d.style.animationDelay=(i*.06)+'s';bars.appendChild(d)}
+var S=[
+{t:'1. Connect and scan',b:'Phase 1: Analysis',h:'AI finds your best customers.',d:'Connect WhatsApp, your store or your CRM. Kelo scans your leads in Pakistan and abroad to find the ones ready to buy.',m:['Ali Traders, Karachi: 98% match','Nordic Retail, Stockholm: 92% match','Gulf Textiles, Dubai: 89% match']},
+{t:'2. Personalize',b:'Phase 2: Strategy',h:'The right message for every lead.',d:'Kelo writes follow-ups in the language each customer prefers, based on each prospect’s past chats and activity.',m:['Hi Ahmed, your quotation is ready','Hi Sarah, following up on your sample request','Draft ready for your approval']},
+{t:'3. Automate',b:'Phase 3: Execution',h:'Agents handle the follow-up.',d:'Automated agents reply to leads, send quotations and book meetings straight into your calendar.',m:['WhatsApp reply sent in 12 seconds','Quotation shared in PKR','Meeting booked: Thursday 3:00 PM PKT']},
+{t:'4. Optimize',b:'Phase 4: Scale',h:'Better results every week.',d:'Kelo learns from every conversation and adjusts your messaging, timing and targeting to lift conversions.',m:['Best send time: 7 to 9 PM PKT','Personalized messages get more replies','Close rate up 24% this week']}];
+var tabs=document.getElementById('tabs'),hw=document.getElementById('hw');
+var cur=0,auto=1;function show(i){cur=i;tabs.querySelectorAll('button').forEach(function(b,j){b.classList.toggle('on',i===j)});var s=S[i];hw.innerHTML='<div><span class="bd">'+s.b+'</span><h3>'+s.h+'</h3><p>'+s.d+'</p><button class="btn g">Start automating now</button></div><div class="mk">'+s.m.map(function(x){return'<div>'+x+'</div>'}).join('')+'</div>'}
+S.forEach(function(s,i){var b=document.createElement('button');b.textContent=s.t;b.onclick=function(){auto=0;show(i)};tabs.appendChild(b)});show(0);
+document.getElementById('sb').onclick=function(){var e=document.getElementById('em'),b=this;if(e.value.indexOf('@')>0){b.textContent='Subscribed!';e.value='';setTimeout(function(){b.textContent='Subscribe'},2000)}else{e.style.borderColor='#00bd7c'}};
+var $=function(s){return document.querySelectorAll(s)};
+var nv=$('.nav')[0],pg=document.getElementById('prog');
+function sc(){var h=document.documentElement;nv.classList.toggle('sc',scrollY>40||PG!=='home');pg.style.width=(scrollY/Math.max(1,h.scrollHeight-innerHeight)*100)+'%'}
+addEventListener('scroll',sc,{passive:true});sc();
+var hr=$('.hero')[0];hr.onmousemove=function(e){var r=hr.getBoundingClientRect();hr.style.setProperty('--hx',e.clientX-r.left+'px');hr.style.setProperty('--hy',e.clientY-r.top+'px')};
+var W=['the world','Dubai','London','Toronto','Singapore'],wi=0,rt=document.getElementById('rot');
+setInterval(function(){rt.style.opacity=0;setTimeout(function(){wi=(wi+1)%W.length;rt.textContent=W[wi];rt.style.opacity=1},300)},2600);
+var ds=$('.dash')[0];
+ds.onmousemove=function(e){var r=ds.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;ds.style.transform='perspective(1200px) rotateY('+x*4+'deg) rotateX('+(-y*4)+'deg)'};
+ds.onmouseleave=function(){ds.style.transform=''};
+$('.dash aside a').forEach(function(a){a.onclick=function(){$('.dash aside a').forEach(function(x){x.classList.remove('on')});a.classList.add('on')}});
+var CH={m:{y:[150,140,160,100,120,80],l:['Jan','Feb','Mar','Apr','May','Jun']},w:{y:[170,120,140,90,110,60],l:['Mon','Tue','Wed','Thu','Fri','Sat']}},cm='m';
+function draw(k){cm=k;var c=CH[k],ln=document.getElementById('ln');ln.setAttribute('d','M'+c.y.map(function(y,i){return i*160+','+y}).join(' L'));ln.style.animation='none';ln.getBoundingClientRect();ln.style.animation='dr 1.2s forwards';document.getElementById('xl').innerHTML=c.l.map(function(x){return'<span>'+x+'</span>'}).join('');$('.sw button').forEach(function(b){b.classList.toggle('on',b.dataset.w===k)})}
+$('.sw button').forEach(function(b){b.onclick=function(){draw(b.dataset.w)}});
+var sv=$('.ch')[0],tp=document.getElementById('tip');
+sv.onmousemove=function(e){var r=sv.getBoundingClientRect(),p=sv.parentNode.getBoundingClientRect(),i=Math.max(0,Math.min(5,Math.round((e.clientX-r.left)/r.width*5))),y=CH[cm].y[i],v=(200-y)*.4;tp.textContent=R==='pk'?'Rs '+(v*.28).toFixed(1)+'M':'$'+Math.round(v)+'K';tp.style.left=(r.left-p.left+i/5*r.width)+'px';tp.style.top=(r.top-p.top+y/200*r.height)+'px';tp.classList.add('on')};
+sv.onmouseleave=function(){tp.classList.remove('on')};
+var T=[['bell','New lead from Dubai','#6366f1'],['cash','Payment received via Raast','#01bc7d'],['file','Quotation opened in Karachi','#f97217'],['cal','Meeting booked with a London client','#0ea5e9'],['check','Invoice paid in USD','#01bc7d']],ti=0,ts=document.getElementById('toast');
+setInterval(function(){var o=T[ti++%T.length];ts.innerHTML=ic(o[0])+'<span>'+o[1]+'</span>';ts.firstChild.style.background=o[2];ts.classList.add('on');setTimeout(function(){ts.classList.remove('on')},2400)},4000);
+setInterval(function(){if(auto)show((cur+1)%S.length)},6000);
+$('.fc,.it,.pc').forEach(function(c){c.onmousemove=function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')}});
+function fm(n){return R==='pk'?'Rs '+Math.round(n).toLocaleString('en-PK'):'$'+Math.round(n).toLocaleString('en-US')}
+function calc(reset){var r1=document.getElementById('r1'),r2=document.getElementById('r2'),p=R==='pk';if(reset){r2.min=p?5000:50;r2.max=p?500000:5000;r2.step=p?5000:50;r2.value=p?50000:500}var l=+r1.value,d=+r2.value;document.getElementById('v1').textContent=l.toLocaleString();document.getElementById('v2').textContent=fm(d);document.getElementById('o1').textContent=Math.round(l*.35).toLocaleString()+' hrs';document.getElementById('o2').textContent=fm(l*.08*d)}
+document.getElementById('r1').oninput=document.getElementById('r2').oninput=function(){calc()};calc(1);
+$('h2,.sub,.fc,.it,.pc,.fq,.tabs,.calc,.st').forEach(function(e,i){e.classList.add('rv');e.style.transitionDelay=(i%4*70)+'ms'});
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(!x.isIntersecting)return;var e=x.target;io.unobserve(e);e.classList.add('in');setTimeout(function(){e.classList.remove('rv','in');e.style.transitionDelay=''},1000)})},{threshold:.12});
+$('.rv').forEach(function(e){io.observe(e)});
+var co=new IntersectionObserver(function(es){es.forEach(function(x){if(!x.isIntersecting)return;co.unobserve(x.target);x.target.querySelectorAll('b').forEach(function(b){var m=b.textContent.match(/(\d+)(.*)/),n=+m[1],t0=performance.now();(function f(t){var q=Math.min((t-t0)/1400,1);b.textContent=Math.round(n*(1-Math.pow(1-q,3)))+m[2];if(q<1)requestAnimationFrame(f)})(t0)})})},{threshold:.4});
+$('.st').forEach(function(e){co.observe(e)});
+var cu=document.getElementById('cur');
+addEventListener('mousemove',function(e){cu.style.transform='translate('+e.clientX+'px,'+e.clientY+'px)'});
+document.addEventListener('mouseover',function(e){cu.classList.toggle('big',!!e.target.closest('a,button,summary,input,.nd'))});
+function pop(x,y){for(var i=0;i<26;i++){var d=document.createElement('i');d.className='cf';d.style.left=x+'px';d.style.top=y+'px';d.style.background=['#01bc7d','#ffd166','#6366f1','#f472b6'][i%4];document.body.appendChild(d);var a=Math.random()*6.28,s=80+Math.random()*140;d.animate([{transform:'translate(0,0) scale(1)',opacity:1},{transform:'translate('+Math.cos(a)*s+'px,'+(Math.sin(a)*s+80)+'px) rotate('+Math.random()*540+'deg) scale(.4)',opacity:0}],{duration:900,easing:'cubic-bezier(.2,.8,.3,1)'}).onfinish=function(){this.effect.target.remove()}}}
+document.addEventListener('click',function(e){if(e.target.closest('.btn,.nd'))pop(e.clientX,e.clientY)});
+var cta=$('.cta')[0];cta.onmousemove=function(e){var r=cta.getBoundingClientRect();cta.style.transform='translate('+(e.clientX-r.left-r.width/2)*.25+'px,'+(e.clientY-r.top-r.height/2)*.35+'px)'};cta.onmouseleave=function(){cta.style.transform=''};
+var CI={Lahore:['Headquarters · PKR','JazzCash, Easypaisa, Raast, bank transfer','pk'],Dubai:['38 deals · AED','Bank transfer and cards','in'],London:['24 deals · GBP','Cards and bank transfer','in'],Toronto:['17 deals · CAD','Cards and bank transfer','in'],Singapore:['21 deals · SGD','Cards and bank transfer','in'],Sydney:['9 deals · AUD','Cards and bank transfer','in']};
+$('.nd').forEach(function(n){var c=n.dataset.c;function s(){var d=CI[c];document.getElementById('info').innerHTML='<b>'+c+'</b><span>'+d[0]+'</span><span>'+d[1]+'</span>';$('.nd').forEach(function(x){x.classList.toggle('on',x===n)})}n.onmouseenter=n.onfocus=s;n.onclick=function(){setR(CI[c][2])}});
+$('.nd')[0].onmouseenter();
+var dv=128,dt=document.getElementById('dt');setInterval(function(){dv=Math.max(100,dv+Math.round(Math.random()*4-1.5));dt.textContent=dv},1500);
+$('.pc .btn').forEach(function(b){var a=document.createElement('a');a.className=b.className;a.href='#/contact';a.textContent=b.textContent;b.replaceWith(a)});
+document.body.insertBefore($('.nav')[0],document.body.firstChild);
+var PGS={home:['.hero','.mq','.mp','.ex','.mt'],features:['#features','.int'],how:['#how','.calc'],pricing:['#pricing','#faq'],contact:['#contact']},PG='';
+Object.keys(PGS).forEach(function(k){PGS[k].forEach(function(s){var e=$(s)[0];e=e.closest('section')||e;e.dataset.pg=k})});
+function hk(){var k=location.hash.replace('#','').replace('/','');return PGS[k]?k:'home'}
+function route(k){k=PGS[k]?k:'home';PG=k;var f=1;$('[data-pg]').forEach(function(e){var on=e.dataset.pg===k;e.style.display=on?'':'none';e.style.marginTop='';e.classList.remove('pgi');if(on){void e.offsetWidth;e.classList.add('pgi');if(f&&k!=='home')e.style.marginTop='90px';f=0}});$('.nl a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href').slice(2)===(k==='home'?'':k))});scrollTo({top:0,behavior:'instant'});sc()}
+function go(k){route(k);try{location.hash='#/'+k}catch(x){}}
+addEventListener('hashchange',function(){var k=hk();if(k!==PG)route(k)});
+document.addEventListener('click',function(e){var a=e.target.closest('a'),h=a&&a.getAttribute('href');if(h&&h.indexOf('#/')===0){e.preventDefault();go(h.slice(2))}else if(h==='#')e.preventDefault()});
+$('.cta')[0].addEventListener('click',function(){go('pricing')});
+document.getElementById('hw').addEventListener('click',function(e){if(e.target.closest('.btn'))go('pricing')});
+var cn=document.getElementById('cn'),cm=document.getElementById('cm');
+function up(){document.getElementById('send').href='mailto:moosasaud77@gmail.com?subject='+encodeURIComponent('Message from '+(cn.value||'a website visitor'))+'&body='+encodeURIComponent(cm.value)}
+cn.oninput=cm.oninput=up;
+var IC={chart:`<path d='M3 3v18h18'/><path d='M18 17V9M13 17V5M8 17v-3'/>`,msg:`<path d='M7.9 20A9 9 0 1 0 4 16.1L2 22z'/><path d='M8 12h.01M12 12h.01M16 12h.01'/>`,card:`<rect width='20' height='14' x='2' y='5' rx='2'/><path d='M2 10h20M6 15h4'/>`,globe:`<circle cx='12' cy='12' r='10'/><path d='M2 12h20M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z'/>`,users:`<path d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/><circle cx='9' cy='7' r='4'/><path d='M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8'/>`,mail:`<rect width='20' height='16' x='2' y='4' rx='2'/><path d='m22 7-10 6L2 7'/>`,phone:`<path d='M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z'/>`,bell:`<path d='M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a2 2 0 0 0 3.4 0'/>`,cash:`<rect width='20' height='12' x='2' y='6' rx='2'/><circle cx='12' cy='12' r='2'/><path d='M6 12h.01M18 12h.01'/>`,file:`<path d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5z'/><path d='M14 2v6h6M8 13h8M8 17h5'/>`,cal:`<rect width='18' height='18' x='3' y='4' rx='2'/><path d='M16 2v4M8 2v4M3 10h18m-12 6 2 2 4-4'/>`,check:`<circle cx='12' cy='12' r='10'/><path d='m9 12 2 2 4-4'/>`,tick:`<path d='m5 12 5 5 9-10'/>`};
+function ic(n){return "<svg class='sv' viewBox='0 0 24 24'>"+IC[n]+'</svg>'}
+$('[data-ic]').forEach(function(e){e.insertAdjacentHTML('afterbegin',ic(e.dataset.ic))});
+route(hk());
+</script></body></html>
